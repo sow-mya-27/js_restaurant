@@ -1,0 +1,86 @@
+[
+  {
+    "image": "https://st3.depositphotos.com/5653638/15613/i/600/depositphotos_156133076-stock-photo-gobi-or-veg-manchurian-dry.jpg",
+    "name": "Manchurian",
+    "price": "130",
+    "id": 1,
+    "course_type": "starter"
+  },
+  {
+    "image": "https://media.istockphoto.com/photos/veg-manchurian-very-popular-chinese-snack-popular-in-india-picture-id1208081427?k=20&m=1208081427&s=612x612&w=0&h=dwEbKPp-fXav6CbcalkuK2GzMDvw0PbMg07B7ovzcDo=",
+    "name": "Chicken 65",
+    "price": "100",
+    "id": 2,
+    "course_type": "starter"
+  },
+  {
+    "image": "https://i0.wp.com/sinfullyspicy.com/wp-content/uploads/2021/10/4460761A-03CC-4666-BBD8-7221A78AFAA5.jpeg?resize=584%2C876&ssl=1",
+    "name": "Chicken Wings",
+    "price": "190",
+    "id": 3,
+    "course_type": "starter"
+  },
+  {
+    "image": "https://1.bp.blogspot.com/-JGYgPx5va34/XfasA_3Hj-I/AAAAAAAAPVU/yJRaf9W9gp8FZ4_7SZQkbIg8txpjd1-qwCNcBGAsYHQ/s1600/Chicken_Kabab.JPG",
+    "name": "Kabab",
+    "price": "250",
+    "id": 4,
+    "course_type": "starter"
+  },
+  {
+    "image": "https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/best_and_worst_sushi_slideshow/1800ss_thinkstock_rf_avocado_sushi.jpg?resize=650px:*",
+    "name": "Sushi",
+    "price": "100",
+    "id": 5,
+    "course_type": "starter"
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4ge_YHZTo3j9corUrc8fDO-J1fQzCCBsRAQ&usqp=CAU",
+    "name": "Veg Lollipop",
+    "price": "120",
+    "id": 6,
+    "course_type": "starter"
+  },
+  {
+    "image": "https://image.shutterstock.com/image-photo/egg-biryani-basmati-rice-cooked-260nw-1069327199.jpg",
+    "name": "Egg Biryani",
+    "price": "200",
+    "id": 7,
+    "course_type": "main-course"
+  },
+  {
+    "image": "https://media-cdn.tripadvisor.com/media/photo-s/11/bf/78/70/paneer-butter-masala.jpg",
+    "name": "Paneer Butter Masala",
+    "price": "190",
+    "id": 8,
+    "course_type": "main-course"
+  },
+  {
+    "image": "https://t4.ftcdn.net/jpg/03/56/29/67/360_F_356296725_99B7HWo96NcVPFxYbvB3Vx834717I97H.jpg",
+    "name": "Chicken Biryani",
+    "price": "300",
+    "id": 9,
+    "course_type": "main-course"
+  },
+  {
+    "image": "https://thumbs.dreamstime.com/b/masala-dosa-chutney-sambaar-traditionally-south-indian-dish-masala-dosa-chutney-sambaar-traditionally-south-96973772.jpg",
+    "name": "Dosa",
+    "price": "80",
+    "id": 10,
+    "course_type": "breakfast"
+  },
+  {
+    "image": "https://image.shutterstock.com/image-photo/food-south-indian-idli-vada-260nw-309218966.jpg",
+    "name": "Idli",
+    "price": "50",
+    "id": 11,
+    "course_type": "breakfast"
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c2FuZHdpY2h8ZW58MHx8MHx8&w=1000&q=80",
+    "name": "Sandwich",
+    "price": "80",
+    "id": 12,
+    "course_type": "breakfast"
+  }
+]

@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <title>Zemoso Restaurant</title>
+    <link rel="stylesheet" href="../styles/index.css" />
+    <script src="../scripts/index.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="table">
+        <h2>Tables</h2>
+        <input
+          type="text"
+          id="search-table"
+          class="search-bar"
+          name="search-table"
+          placeholder="Search table"
+          onkeyup="searchTables(event.target.value)"
+        />
+        <div class="tables" id="tables">
+          <!--
+          <div class="table1" id="table1" name="table1">
+            <div class="table-name" id="table1-name">
+              <h4>Table1</h4>
+            </div>
+            <div class="cost-details" id="cost-details_table1">
+              <div class="cost" id="cost1">RS.0</div>
+              <div class="total-items">Total items:0</div>
+            </div>
+          </div>
+          <div class="table1" id="table2" name="table2">
+            <div class="table-name" id="table2-name">
+              <h4>Table2</h4>
+            </div>
+            <div class="cost-details" id="cost-details_table2">
+              <div class="cost" id="cost2">RS.0</div>
+              <div class="total-items">Total items:0</div>
+            </div>
+          </div>-->
+        </div>
+      </div>
+      <div class="menu">
+        <h2>Menu</h2>
+        <input
+          type="text"
+          id="search-menu"
+          class="search-bar"
+          name="search-menu"
+          placeholder="Search menu"
+          onkeyup="searchImages(event.target.value)"
+        />
+        <div class="container" id="container"></div>
+      </div>
+    </div>
+  </body>
+</html>
