@@ -4,7 +4,7 @@ body {
   overflow: hidden;
 }
 .table {
-  background-color: lightslategrey;
+  background-color: darkslategrey;
   padding-left: 30px;
   padding-right: 30px;
   width: 30%;
@@ -31,7 +31,7 @@ body {
 }
 
 .table1 {
-  background-color: white;
+  background-color: wheat;
   padding: 20px;
   width: 60%;
   padding-top: 20px;
@@ -60,13 +60,17 @@ img {
   transform: scale(1.05);
   transition: 500ms;
 }
-.dish-info {
+.dish-name,
+.price {
   background-color: white;
   padding: 2%;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-bottom-left-radius: 30px;
+}
+.dish-name {
+  border-bottom-left-radius: 0px !important;
 }
 @media screen and (max-width: 1000px) {
   .container {
