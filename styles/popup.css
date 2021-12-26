@@ -29,16 +29,34 @@
   background-color: white;
   overflow: hidden;
 }
-.content{
+.content {
   display: flex;
   flex-direction: column;
   overflow: auto;
 }
-#total_price{
-  display:flex;
+#total_price {
+  display: flex;
   justify-content: flex-end;
   flex-direction: column;
   align-items: center;
-  align-content: flex-end;
   overflow: auto;
+  color: purple;
+  font-weight: bolder;
+}
+.bold {
+  color: purple;
+  font-weight: bolder;
+}
+#table_modal {
+}
+table,
+th,
+td {
+  padding: 5px;
+  border: 1px solid black;
+}
+.del {
+  width: 18%;
+  height: 18%;
+  padding-right: 0px;
 }

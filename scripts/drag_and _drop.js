@@ -33,21 +33,19 @@ function drop(ev, event) {
   table_data.forEach((object) => {
     if (object.table_id == table_id_) {
       object.price = parseInt(object.price) + parseInt(price_dish);
-      let flag=0;
-      object.items_list[0].id.forEach((dish)=>{
-        
-        if(dish.dish_id==image_id){
-          flag=1;
-          dish.quantity+=1;
+      let flag = 0;
+      object.items_list.forEach((dish) => {
+        if (dish.dish_id == image_id) {
+          flag = 1;
+          dish.quantity += 1;
         }
-      })
-      if(flag==0){
-        object.items_list[0].id.push({
-          "dish_id":image_id,
-          "quantity":1
-        })
-        object.items+=1;
-
+      });
+      if (flag == 0) {
+        object.items_list.push({
+          dish_id: image_id,
+          quantity: 1,
+        });
+        object.items += 1;
       }
       /*if(object.items_list[0].id.dish_id[0].includes(image_id)){
         object.items_list[0].id.quantity+=1;
@@ -57,7 +55,6 @@ function drop(ev, event) {
         object.items+=1;
       }
       console.log(object.items_list[0].id);*/
-      
     } else {
     }
   });
