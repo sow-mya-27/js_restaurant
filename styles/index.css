@@ -32,11 +32,10 @@ body {
 
 .table1 {
   background-color: wheat;
-  padding: 20px;
+  padding: 6%;
   width: 60%;
-  padding-top: 20px;
   border: 1px solid black;
-  margin: 30px;
+  margin: 7%;
   border-radius: 20px;
   text-align: center;
 }
@@ -87,5 +86,43 @@ img {
     width: 30vw;
     border-top-right-radius: 30px;
     object-fit: cover;
+  }
+
+  .table1 {
+    background-color: wheat;
+    padding: 9%;
+    width: 60%;
+    border: 1px solid black;
+    margin: 3%;
+    border-radius: 20px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    display: inline-grid;
+    padding: 5% 1% 1% 1%;
+    grid-template-columns: 1fr;
+    grid-gap: 1%;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    height: 30vh;
+    width: 30vw;
+    border-top-right-radius: 30px;
+    object-fit: cover;
+  }
+
+  .table1 {
+    background-color: wheat;
+    padding: 15%;
+    width: 60%;
+    border: 1px solid black;
+    margin: 2%;
+    border-radius: 20px;
+    text-align: center;
   }
 }

@@ -3,30 +3,70 @@
     "table_name": "Table-1",
     "items": 0,
     "price": 0,
-    "id": 1
+    "table_id": "table1",
+    "items_list":[
+      {
+        "id": [{
+          "dish_id":0,
+          "quantity":0
+        }]
+      }
+    ]
   },
   {
     "table_name": "Table-2",
     "items": 0,
     "price": 0,
-    "id": 2
+    "table_id": "table2",
+    "items_list":[
+      {
+        "id": [{
+          "dish_id":0,
+          "quantity":0
+        }]
+      }
+    ]
   },
   {
     "table_name": "Table-3",
     "items": 0,
     "price": 0,
-    "id": 3
+    "table_id": "table3",
+    "items_list":[
+      {
+        "id": [{
+          "dish_id":0,
+          "quantity":0
+        }]
+      }
+    ]
   },
   {
     "table_name": "Table-4",
     "items": 0,
     "price": 0,
-    "id": 4
+    "table_id": "table4",
+    "items_list":[
+      {
+        "id": [{
+          "dish_id":0,
+          "quantity":0
+        }]
+      }
+    ]
   },
   {
     "table_name": "Table-5",
     "items": 0,
     "price": 0,
-    "id": 5
+    "table_id": "table5",
+    "items_list":[
+      {
+        "id": [{
+          "dish_id":0,
+          "quantity":0
+        }]
+      }
+    ]
   }
 ]

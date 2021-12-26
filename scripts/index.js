@@ -19,7 +19,7 @@ function loadTables(data) {
   data.forEach((object) => {
     let table1 = document.createElement("div");
     table1.setAttribute("class", "table1");
-    table1.setAttribute("id", object.id);
+    table1.setAttribute("id", object.table_id);
     let table_name = document.createElement("div");
     table_name.setAttribute("class", "table-name");
     table1.appendChild(table_name);
@@ -32,9 +32,11 @@ function loadTables(data) {
     cost.innerText = "Total Price :  " + object.price;
     total_items.innerText = "Total Items :  " + object.items;
     table_name.innerText = "Table Name :  " + object.table_name;
-    document.getElementById("tables").appendChild(table1);
+    table1.setAttribute("onclick", "modal(event,this.id)");
+
     table1.setAttribute("ondrop", "drop(this.id,event)");
     table1.setAttribute("ondragover", "allowDrop(event)");
+    document.getElementById("tables").appendChild(table1);
   });
 }
 
