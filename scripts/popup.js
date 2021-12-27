@@ -51,7 +51,6 @@ function closeModal() {
 function getDishName(id) {
   data_original.forEach((object) => {
     if (object.id == id) {
-      console.log(object.name);
       return object.name;
     }
   });
@@ -96,7 +95,6 @@ function loadPopup(table) {
       let input_id;
       let dish_id;
       qu.setAttribute("type", "number");
-      qu.setAttribute("min", 1);
       qu.setAttribute("onchange", "changeContents(event)");
       data_original.forEach((dish) => {
         if (dish.id == object.dish_id) {
@@ -109,17 +107,18 @@ function loadPopup(table) {
       input_id = table.table_id + " " + dish_id;
       qu.setAttribute("id", input_id);
       delete1 = document.createElement("img");
+      let del_id = table.table_id + "_" + dish_id;
+      delete1.setAttribute("id", del_id);
       delete1.src =
         "https://yannismygdanis.com/synth4kids/images/Attributes/Delete.png";
       delete1.setAttribute("class", "del");
-      delete1.setAttribute("onclick", "deleteDish()");
+      delete1.setAttribute("onclick", "deleteDish(event.target.id)");
       tr.appendChild(sno);
       tr.appendChild(dish_name);
       tr.appendChild(qu);
       tr.appendChild(price_dish);
       tr.appendChild(delete1);
       table.price = total_price;
-      console.log(dish_name);
       document.getElementById("total_price").innerHTML =
         "Total Price :  " + total_price;
       document.getElementById("table_modal").appendChild(tr);
@@ -129,11 +128,15 @@ function loadPopup(table) {
 }
 function changeContents(e) {
   let input = document.getElementById("e.target.id");
+  if (e.target.value == 0) {
+    let a = e.target.id.replace(" ", "_");
+
+    deleteDish(a);
+  }
   let [table_id, dish_id] = e.target.id.split(" ");
   let table;
   table_data.forEach((object) => {
     if (object.table_id == table_id) {
-      console.log(object.items_list);
       table = object;
       object.items_list.forEach((dish) => {
         if (dish.dish_id == dish_id) {
@@ -142,8 +145,36 @@ function changeContents(e) {
       });
     }
   });
-  console.log(table);
-  console.log(table);
   loadPopup(table);
 }
-function deleteDish() {}
+function deleteDish(e) {
+  let [table_id, dish_id] = e.split("_");
+  let dishPrice, table, quantity;
+  data_original.forEach((object) => {
+    if (object.id == dish_id) {
+      dishPrice = object.price;
+    }
+  });
+  table_data.forEach((object) => {
+    let i = 0;
+    if (object.table_id == table_id) {
+      table = object;
+      object.items_list.forEach((dish) => {
+        i++;
+        if (dish.dish_id == dish_id) {
+          quantity = dish.quantity;
+          dish.quantity = 0;
+          console.log(i);
+          object.items_list.splice(i - 1, 1);
+          i--;
+        }
+      });
+    }
+  });
+  table.items -= 1;
+  table.price -= quantity * dishPrice;
+  document.getElementById("total_price").innerHTML =
+    "Total Price :  " + table.price;
+  loadPopup(table);
+  loadTables(table_data);
+}
